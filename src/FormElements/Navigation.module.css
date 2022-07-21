@@ -1,0 +1,68 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.navBarDropdown{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.userInfo{
+    cursor: pointer;
+}
+
+.userInfo p{
+    color: white;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+.userInfo p:hover{
+    border: 2px solid lightblue;
+    padding: 5px;
+}
+
+.navBarDropdown span{
+    width: 30px;
+    border: 3px solid white;
+    margin-bottom: 2px;
+}
+
+.userDesc{
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 120px;
+    font-size: small;
+    background-color: black;
+    position: absolute;
+    color: skyblue;
+    padding-left: 10px;
+    padding-top: 10px;
+    top:4rem;
+    right: 10px;
+    z-index: 100;
+    text-align: left;
+    font-weight: normal;
+}
+
+.userDesc:after{
+    content: " ";
+    position: absolute;
+    right: 35px;
+    top:-12px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: none;
+    border-bottom: 15px solid white;
+}
+
+.Signout:hover{
+    border: 2px solid lightblue;
+    padding: 5px;
+}

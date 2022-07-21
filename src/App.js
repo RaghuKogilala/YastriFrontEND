@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Layout from './Layout';
+import {BrowserRouter} from 'react-router-dom'
+import {Provider} from 'react-redux'
+import {configureStore} from '@reduxjs/toolkit'
+import AuthStore from './Store/AuthStore';
 
 function App() {
+
+  const store = configureStore({
+    reducer:{
+      auth:AuthStore
+    }
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }

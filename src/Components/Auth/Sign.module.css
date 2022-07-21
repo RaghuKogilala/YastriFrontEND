@@ -1,0 +1,11 @@
+.emailRsendParent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.TextDeco{
+    text-decoration: none;
+    color: grey;
+}

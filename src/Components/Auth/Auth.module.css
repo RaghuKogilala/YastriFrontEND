@@ -1,0 +1,39 @@
+.authParent{
+    width: 35%;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.headerStyles{
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.activeClass{
+    border-bottom: 2px solid rgb(73, 73, 100);
+}
+
+
+.authModel{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    justify-content:space-evenly;
+    align-items: center;    
+}
+
+.signInForm{
+    width: 80%;
+    margin: auto;
+}
+
+.authModel p{
+    font-size: 2rem;
+}
+
+.submitButton{
+    width:100%;
+}
