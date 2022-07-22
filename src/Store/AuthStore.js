@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-
+// created redux store using reduxjs toolkit
 const autentication = createSlice({
     name:'authentication',
     initialState:{
